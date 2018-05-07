@@ -14,7 +14,7 @@ goversion=$(go version | awk '{print $3}')
 sha256sum=()
 
 echo "... running tests"
-./test.sh
+# . ./test.sh
 
 for os in windows linux darwin; do
     echo "... building v$version for $os/$arch"
